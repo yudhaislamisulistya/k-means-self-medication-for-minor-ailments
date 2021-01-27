@@ -33,4 +33,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('/data-riwayat', 'AdminController@postSimpanRiwayat')->name('postSimpanRiwayat');
     Route::get('/data-riwayat', 'AdminController@getSimpanRiwayat')->name('getDataRiwayat');
 
+    Route::get('/data-obat', 'AdminController@getDataObat')->name('getDataObat');
+
 });

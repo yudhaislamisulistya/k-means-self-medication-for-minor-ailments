@@ -35,9 +35,9 @@ class AdminController extends Controller
     {
         $data_transformasi_nilai = DB::table('tbl_transformasi')->get();
         $nilai_atribut = $request->nilai_atribut;
-        $nilai_obat = $request->nilai_obat;
+        $nilai_gejala = $request->nilai_gejala;
         $nama = $request->nama;
-        return view('admin.hasil-pemilihan-obat', compact('data_transformasi_nilai', 'nilai_atribut', 'nilai_obat', 'nama'));
+        return view('admin.hasil-pemilihan-obat', compact('data_transformasi_nilai', 'nilai_atribut', 'nilai_gejala', 'nama'));
     }
 
     public function postSimpanRiwayat(Request $request)
@@ -46,7 +46,7 @@ class AdminController extends Controller
             [
                 'nama' => $request->nama,
                 'nilai_atribut' => $request->nilai_atribut,
-                'nilai_obat' => $request->nilai_obat,
+                'nilai_gejala' => $request->nilai_gejala,
                 'hasil' => $request->hasil,
             ]
         );
@@ -58,5 +58,12 @@ class AdminController extends Controller
     {
         $data_riwayat = DB::table('tbl_riwayat')->get();
         return view('admin.data-riwayat', compact('data_riwayat'));
+    }
+
+    // Data Obat
+
+    public function getDataObat()
+    {
+        return view('admin.data-obat');
     }
 }

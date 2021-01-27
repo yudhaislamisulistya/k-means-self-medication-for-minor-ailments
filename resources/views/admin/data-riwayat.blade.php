@@ -9,7 +9,7 @@
             <div class="iq-card">
                 <div class="iq-card-header d-flex justify-content-between">
                     <div class="iq-header-title">
-                        <h4 class="card-title">Data Transormasi Nilai</h4>
+                        <h4 class="card-title">Data Riwayat</h4>
                     </div>
                 </div>
                 <div class="iq-card-body">

@@ -82,6 +82,10 @@
                             <a href="{{route('getDataTransormasiNilai')}}" class="iq-waves-effect"><i
                                     class="ri-home-8-fill"></i><span>Data Transormasi Nilai</span></a>
                         </li>
+                        <li>
+                            <a href="{{route('getDataObat')}}" class="iq-waves-effect"><i
+                                    class="ri-home-8-fill"></i><span>Data Obat</span></a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="p-3"></div>
